@@ -1,71 +1,59 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Fondo general */
 body {
-  background: #050505;
-  color: #00ffe7;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  color: #ffffff;
+  min-height: 100vh;
 }
 
-.grid {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-image:
-    linear-gradient(#111 1px, transparent 1px),
-    linear-gradient(90deg, #111 1px, transparent 1px);
-  background-size: 40px 40px;
-  z-index: -1;
-}
-
+/* Contenedor principal */
 .container {
-  max-width: 420px;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-.title {
-  font-size: 40px;
-  text-shadow: 0 0 15px #00ffe7;
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00ffd5;
 }
 
-.subtitle {
-  margin: 15px 0 25px;
-  font-size: 12px;
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
+/* Subtítulo */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
-.section-title {
-  margin: 30px 0 15px;
+/* Texto */
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #dddddd;
 }
 
-.btn {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  font-size: 16px;
-  border-radius: 4px;
+/* Botón */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #00ffd5;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.btn-main {
-  background: #ff00ff;
-  border: none;
-  box-shadow: 0 0 25px #ff00ff;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid #ff00ff;
-  color: #ff00ff;
-}
-
-footer {
-  margin-top: 30px;
-  font-size: 10px;
-  color: #777;
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 255, 213, 0.4);
 }
